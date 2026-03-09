@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Events and Reflections</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('orange.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #e67e22;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      min-height: 100vh;
+    }
+
+    .title-box {
+      background-color: rgba(50,20,0,0.9); /* dark orange-brown */
+      border: 2px solid #e67e22;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #e67e22;
+      padding: 20px 40px;
+      margin: 30px 0;
+      text-align: center;
+    }
+
+    .title-box h1 {
+      font-size: 2.5em;
+      color: #e67e22;
+      margin: 0;
+      text-shadow: 0 0 10px #e67e22;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 80%;
+      padding: 20px;
+    }
+
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(50,20,0,0.9); /* dark orange-brown */
+      border: 2px solid #e67e22;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #e67e22;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .box:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 25px #e67e22;
+    }
+
+    .text-content {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .text-content h2 {
+      margin: 0 0 10px;
+      color: #e67e22;
+    }
+
+    .text-content p {
+      margin: 0;
+      color: #e67e22;
+    }
+
+    .box img {
+      width: 250px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    .modal-content {
+      margin: 5% auto;
+      display: block;
+      max-width: 80%;
+      border: 3px solid #e67e22;
+      box-shadow: 0 0 25px #e67e22;
+      border-radius: 12px;
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #e67e22;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      text-shadow: 0 0 10px #e67e22;
+    }
+
+    .close:hover {
+      color: #fff;
+    }
+
+    /* Home button */
+    .home-btn {
+      margin: 30px 0;
+      padding: 12px 24px;
+      font-size: 1.2em;
+      color: #e67e22;
+      background-color: rgba(50,20,0,0.9);
+      border: 2px solid #e67e22;
+      border-radius: 8px;
+      box-shadow: 0 0 15px #e67e22;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .home-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #e67e22;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="title-box">
+    <h1>Events and Reflections</h1>
+  </div>
+
+  <div class="container">
+    <div class="box">
+      <div class="text-content">
+        <h2>Streetdance 2026</h2>
+        <p>For Streetdance, it was a hip-hop competition where our team showcased their talent and energy on stage. I did not join as a performer, but I gave my full support to my team. Cheering for them and helping in the preparations made me realize that being part of a competition is not only about performing but also about standing behind your group with encouragement and positivity.
+
+Through this experience, I learned the value of support and unity. Even if I was not on stage, I felt proud to be part of the team’s journey. It showed me that success is not only measured by winning but also by the strength of teamwork and the joy of celebrating each other’s efforts.</p>
+      </div>
+      <img src="SD.jpg" alt="Long Image 1">
+    </div>
+
+    <div class="box">
+      <div class="text-content">
+        <h2>Battle of the Bands</h2>
+        <p>For Battle of the Bands, it was a competition where different groups showcased their musical talent and originality. I did not perform, but I supported my team and enjoyed watching them bring their ideas to life through music. I was amazed by their creativity, from the way they arranged their songs to the energy they showed on stage.
+
+This experience taught me how music can be a powerful form of expression and how creativity can inspire not only the performers but also the audience. Even though I was not part of the band, I felt proud to witness their dedication and artistry. It reminded me that supporting others and appreciating their talents is also a meaningful role in any competition.</p>
+      </div>
+      <img src="BOTB.jpg" alt="Long Image 2">
+    </div>
+
+    <div class="box">
+      <div class="text-content">
+        <h2>Noli Me Tangere Performance</h2>
+        <p>For the Noli Me Tangere play, it was a section performance where we portrayed characters from the novel on stage. There was a lot of commotion during the preparation and presentation, but we were able to finish successfully. Acting as our characters allowed us to express ourselves in new ways and to bring the story to life.
+
+Most importantly, we had fun throughout the experience. It gave us the chance to explore our creativity, strengthen our teamwork, and appreciate the value of literature through performance. Even with the challenges, the play reminded us that learning and enjoyment go hand in hand when we work together.</p>
+      </div>
+      <img src="NMT.jpeg" alt="Long Image 3">
+    </div>
+  </div>
+
+  <!-- Home button -->
+  <a href="4qtr.html" class="home-btn">Go back to Home Page</a>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <script>
+    const modal = document.getElementById("myModal");
+    const modalImg = document.getElementById("modalImg");
+    const closeBtn = document.getElementsByClassName("close")[0];
+    const images = document.querySelectorAll(".box img");
+
+    images.forEach(img => {
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+      }
+    });
+
+    closeBtn.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>

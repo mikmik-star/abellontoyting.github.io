@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Browser Outputs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('red.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #5D1C19;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      min-height: 100vh;
+    }
+
+    .title-box {
+      background-color: rgba(26,5,5,0.9); /* super dark red */
+      border: 2px solid #5D1C19;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #5D1C19;
+      padding: 20px 40px;
+      margin: 30px 0;
+      text-align: center;
+    }
+
+    .title-box h1 {
+      font-size: 2.5em;
+      color: #5D1C19;
+      margin: 0;
+      text-shadow: 0 0 10px #5D1C19;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+      width: 80%;
+    }
+
+    .box {
+      background-color: rgba(26,5,5,0.9); /* super dark red */
+      border: 2px solid #5D1C19;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #5D1C19;
+      padding: 10px;
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #5D1C19;
+    }
+
+    .box img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    .modal-content {
+      margin: 5% auto;
+      display: block;
+      max-width: 80%;
+      border: 3px solid #5D1C19;
+      box-shadow: 0 0 25px #5D1C19;
+      border-radius: 12px;
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #5D1C19;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      text-shadow: 0 0 10px #5D1C19;
+    }
+
+    .close:hover {
+      color: #fff;
+    }
+
+    /* Home button */
+    .home-btn {
+      margin: 30px 0;
+      padding: 12px 24px;
+      font-size: 1.2em;
+      color: #5D1C19;
+      background-color: rgba(26,5,5,0.9);
+      border: 2px solid #5D1C19;
+      border-radius: 8px;
+      box-shadow: 0 0 15px #5D1C19;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .home-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #5D1C19;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="title-box">
+    <h1>Browser Outputs</h1>
+  </div>
+
+  <div class="container">
+    <div class="box"><img src="first.jpg" alt="Image 1"></div>
+    <div class="box"><img src="second.jpg" alt="Image 2"></div>
+    <div class="box"><img src="third.jpg" alt="Image 3"></div>
+    <div class="box"><img src="fourth.png" alt="Image 4"></div>
+    <div class="box"><img src="fifth.png" alt="Image 5"></div>
+    <div class="box"><img src="sixth.png" alt="Image 6"></div>
+  </div>
+
+  <!-- Home button -->
+  <a href="3rdqtr.html" class="home-btn">Go back to Home Page</a>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <script>
+    const modal = document.getElementById("myModal");
+    const modalImg = document.getElementById("modalImg");
+    const closeBtn = document.getElementsByClassName("close")[0];
+    const boxes = document.querySelectorAll(".box img");
+
+    boxes.forEach(img => {
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+      }
+    });
+
+    closeBtn.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>

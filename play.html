@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Noli Video</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('orange.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #e67e22;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      min-height: 100vh;
+    }
+
+    .title-box {
+      background-color: rgba(50,20,0,0.9); /* deep orange-brown */
+      border: 2px solid #e67e22;
+      border-radius: 12px;
+      box-shadow: 0 0 25px #e67e22;
+      padding: 30px 60px;
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .title-box h1 {
+      font-size: 3em;
+      color: #e67e22;
+      margin: 0;
+      text-shadow: 0 0 15px #e67e22;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 80%;
+      padding: 20px;
+    }
+
+    .box {
+      background-color: rgba(50,20,0,0.9);
+      border: 2px solid #e67e22;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #e67e22;
+      padding: 20px;
+      font-size: 1.2em;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .box:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 30px #e67e22;
+    }
+
+    /* Home button */
+    .home-btn {
+      margin: 40px 0;
+      padding: 15px 30px;
+      font-size: 1.4em;
+      color: #e67e22;
+      background-color: rgba(50,20,0,0.9);
+      border: 2px solid #e67e22;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #e67e22;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .home-btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 35px #e67e22;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #e67e22;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="title-box">
+    <h1>Noli Video</h1>
+  </div>
+
+  <div class="container">
+    <div class="box">
+      <p>Confirm if you want to watch our Noli play?</p>
+    </div>
+
+    <div class="box">
+      <button onclick="showConfirm()">Click to Confirm</button>
+      <div id="result"></div>
+    </div>
+  </div>
+
+  <!-- Home button -->
+  <a href="4qtr.html" class="home-btn">Go back to Home Page</a>
+
+  <script>
+    function showConfirm() {
+      let choice = confirm("Do you want to watch our Noli play?");
+      let resultDiv = document.getElementById("result");
+      if (choice) {
+        resultDiv.innerHTML = '<a href="https://drive.google.com/file/d/1iE6GDIvGzZYP7oICdfdJcVf9cEBs0ZkQ/view?fbclid=IwY2xjawQXxQNleHRuA2FlbQIxMQBzcnRjBmFwcF9pZAEwAAEen6D9ZxJa81K9NdEFpGAPZfIotTHZPLp0U-z3OL37v-igGIXtvpkf_bbwSB8_aem_Ca4UFd2zFkNXvzbAuBqg-w" target="_blank" style="color:#e67e22; text-decoration:underline;">Click here to watch the Noli Video!</a>';
+      } else {
+        resultDiv.textContent = "Please watch it!! :CC";
+      }
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Events and Reflections</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('red.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #5D1C19;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      min-height: 100vh;
+    }
+
+    .title-box {
+      background-color: rgba(26,5,5,0.9); /* super dark red */
+      border: 2px solid #5D1C19;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #5D1C19;
+      padding: 20px 40px;
+      margin: 30px 0;
+      text-align: center;
+    }
+
+    .title-box h1 {
+      font-size: 2.5em;
+      color: #5D1C19;
+      margin: 0;
+      text-shadow: 0 0 10px #5D1C19;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 80%;
+      padding: 20px;
+    }
+
+    .box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(26,5,5,0.9); /* super dark red */
+      border: 2px solid #5D1C19;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #5D1C19;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .box:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 25px #5D1C19;
+    }
+
+    .text-content {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .text-content h2 {
+      margin: 0 0 10px;
+      color: #5D1C19;
+    }
+
+    .text-content p {
+      margin: 0;
+      color: #5D1C19;
+    }
+
+    .box img {
+      width: 250px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    .modal-content {
+      margin: 5% auto;
+      display: block;
+      max-width: 80%;
+      border: 3px solid #5D1C19;
+      box-shadow: 0 0 25px #5D1C19;
+      border-radius: 12px;
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: #5D1C19;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+      text-shadow: 0 0 10px #5D1C19;
+    }
+
+    .close:hover {
+      color: #fff;
+    }
+
+    /* Home button */
+    .home-btn {
+      margin: 30px 0;
+      padding: 12px 24px;
+      font-size: 1.2em;
+      color: #5D1C19;
+      background-color: rgba(26,5,5,0.9);
+      border: 2px solid #5D1C19;
+      border-radius: 8px;
+      box-shadow: 0 0 15px #5D1C19;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .home-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #5D1C19;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="title-box">
+    <h1>Events and Reflections</h1>
+  </div>
+
+  <div class="container">
+    <div class="box">
+      <div class="text-content">
+        <h2>Mr and Ms MVP 2025</h2>
+        <p>As one of the contestants for MVP, I have learned a lot. I learned how to present myself in front of the audience with confidence that builds inner strength. I also know how to deliver speeches which sharpens my communication skills.
+
+Beyond that, I have discovered the importance of poise and grace, not only on stage but also in everyday life. Pageantry has taught me how to carry myself with dignity, even under pressure. I have also developed resilience, learning to accept constructive criticism and use it as motivation to improve.
+
+Through the competition, I gained valuable time management skills, balancing rehearsals, preparations, and personal commitments. I also learned the value of teamwork and camaraderie, as I built friendships with fellow contestants and supported them in their own journeys.
+
+Most importantly, I realized that pageantry is not just about beauty, it is about advocacy and purpose. I learned how to use my voice to champion causes that matter, to inspire others, and to make a positive impact in the community.</p>
+      </div>
+      <img src="MVP.jpeg" alt="Long Image 1">
+    </div>
+
+    <div class="box">
+      <div class="text-content">
+        <h2>VPOP 2026</h2>
+        <p>In VPOP, it was a section competition where we had to create our own song about values. This experience challenged us to be creative while also reflecting on the importance of values in our daily lives. Working together as a team taught us patience, cooperation, and respect for each other’s ideas.
+
+I realized that music is a powerful way to share meaningful messages and inspire others. It strengthened my appreciation for creativity, discipline, and teamwork. Winning 3rd place was not only about the recognition but also about the joy of seeing our hard work and unity rewarded.</p>
+      </div>
+      <img src="VPOP.jpeg" alt="Long Image 2">
+    </div>
+
+    <div class="box">
+      <div class="text-content">
+        <h2>English Book Cover Door</h2>
+        <p>For the Book Cover Door activity, we transformed our classroom door into a book cover. The book we chose was The Lorax. We had fun working together and unleashing our creativity as we designed and decorated the door. Although there were many accidents and challenges along the way, we still enjoyed the process and learned how to adapt and keep going.
+
+Even though we did not win, the experience was meaningful because it allowed us to express our imagination and teamwork. Presenting our finished door gave us pride in our effort, and it reminded us that the joy of creating and collaborating is more valuable than the outcome.</p>
+      </div>
+      <img src="BDC.jpeg" alt="Long Image 3">
+    </div>
+  </div>
+
+  <!-- Home button -->
+  <a href="3rdqtr.html" class="home-btn">Go back to Home Page</a>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+  <script>
+    const modal = document.getElementById("myModal");
+    const modalImg = document.getElementById("modalImg");
+    const closeBtn = document.getElementsByClassName("close")[0];
+    const images = document.querySelectorAll(".box img");
+
+    images.forEach(img => {
+      img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+      }
+    });
+
+    closeBtn.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
+

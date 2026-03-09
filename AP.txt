@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Araling Panlipunan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('orange.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #e67e22;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      min-height: 100vh;
+    }
+
+    .title-box {
+      background-color: rgba(50,20,0,0.9); /* dark orange-brown */
+      border: 2px solid #e67e22;
+      border-radius: 12px;
+      box-shadow: 0 0 25px #e67e22;
+      padding: 30px 60px;
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .title-box h1 {
+      font-size: 3em;
+      color: #e67e22;
+      margin: 0;
+      text-shadow: 0 0 15px #e67e22;
+    }
+
+    .accordion {
+      width: 85%;
+    }
+
+    .accordion-item {
+      background-color: rgba(50,20,0,0.9);
+      border: 2px solid #e67e22;
+      border-radius: 10px;
+      margin: 15px 0;
+      box-shadow: 0 0 20px #e67e22;
+      overflow: hidden;
+      font-size: 1.2em;
+    }
+
+    .accordion-header {
+      padding: 20px;
+      cursor: pointer;
+      font-size: 1.4em;
+      color: #e67e22;
+      transition: background-color 0.3s ease;
+    }
+
+    .accordion-header:hover {
+      background-color: rgba(80,40,0,0.9);
+    }
+
+    .accordion-content {
+      display: none; /* hidden by default */
+      padding: 0 20px;
+      color: #e67e22;
+      font-size: 1.1em;
+    }
+
+    .accordion-content p {
+      margin: 20px 0;
+    }
+
+    .accordion-content img {
+      width: 250px;
+      border-radius: 8px;
+      margin: 10px 0;
+    }
+
+    .accordion-item.active .accordion-content {
+      display: block; /* show full content when active */
+      padding-bottom: 20px;
+    }
+
+    /* Home button */
+    .home-btn {
+      margin: 40px 0;
+      padding: 15px 30px;
+      font-size: 1.4em;
+      color: #e67e22;
+      background-color: rgba(50,20,0,0.9);
+      border: 2px solid #e67e22;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #e67e22;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .home-btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 30px #e67e22;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="title-box">
+    <h1>Araling Panlipunan</h1>
+  </div>
+
+  <div class="accordion">
+    <div class="accordion-item">
+      <div class="accordion-header">Lesson 1: Pambansang Kaunlaran</div>
+      <div class="accordion-content">
+        <h2>Kahulugan</h2> <ul> <li>Estado ng bansa kung saan nakakaranas ng pagbabago ang lahat ng mamamayan, mula sa pinakamababang uri hanggang sa pinakamataas.</li> </ul> <h2>Mga Konsepto ng Pambansang Kaunlaran</h2> <ul> <li><strong>Pagbabago</strong> – proseso ng pag-iiba sa lipunan at ekonomiya.</li> <li><strong>Pag-unlad</strong> – pag-angat ng pamumuhay; progresibong proseso (ayon kina Fajardo at Amartya Sen).</li> <li><strong>Pagsulong</strong> – pag-usad tungo sa layunin, pagpapalawak ng kakayahan.</li> <li><strong>Ebolusyon</strong> – pagbabago sa katangian sa mahabang panahon.</li> </ul> <h2>Dalawang Konsepto ng Pag-unlad (Todaro & Smith, 2012)</h2> <ul> <li><strong>Tradisyunal</strong> – patuloy na pagtaas ng income per capita.</li> <li><strong>Makabago</strong> – malawakang pagbabago sa sistemang panlipunan.</li> </ul> <h2>Mga Salik sa Pagsulong ng Ekonomiya</h2> <ul> <li>Likas na yaman</li> <li>Yamang-tao</li> <li>Kapital</li> <li>Teknolohiya at inobasyon</li> </ul> <h2>Mga Palatandaan ng Pag-unlad</h2> <ul> <li>Makatwiran at dinamikong kaayusan</li> <li>Kasaganaan at kasarinlan</li> <li>Kalayaan sa kahirapan, hanapbuhay para sa lahat</li> <li>Sapat na serbisyong panlipunan</li> <li>Katarungang panlipunan</li> </ul> <h2>Sukatan ng Kaunlaran (UN)</h2> <ul> <li><strong>HDI (Human Development Index)</strong> – kalusugan, edukasyon, pamumuhay.</li> <li><strong>GDP (Gross Domestic Product)</strong> – kabuuang halaga ng produkto at serbisyo sa loob ng bansa.</li> <li><strong>GNP (Gross National Product)</strong> – kabuuang halaga ng produkto at serbisyo ng mamamayan, kahit nasa ibang bansa.</li> </ul> <h2>Antas ng Kaunlaran ng Bansa</h2> <ul> <li><strong>Developed Economies</strong> – mataas na GDP, HDI.</li> <li><strong>Developing Economies</strong> – umuunlad na industriya, hindi pantay ang GDP/HDI.</li> <li><strong>Underdeveloped Economies</strong> – mababang industriyalisasyon, agrikultura, GDP.</li> </ul> <h2>Mga Tungkulin para sa Pag-unlad</h2> <ul> <li>Suportahan ang pamahalaan</li> <li>Sundin ang batas</li> <li>Alagaan ang kapaligiran</li> <li>Labanan ang korapsyon</li> <li>Maging produktibo</li> <li>Tangkilikin ang produktong Pilipino</li> <li>Magtipid ng enerhiya</li> <li>Makilahok sa gawaing pansibiko</li> </ul> <h2>Mga Gampanin ng Mamamayan</h2> <ul> <li><strong>Mapanagutan</strong> – pagbabayad ng buwis, pakikilahok</li> <li><strong>Maabilidad</strong> – kooperatiba, negosyo</li> <li><strong>Maalam</strong> – tamang pagboto, proyekto sa komunidad</li> <li><strong>Makabansa</strong> – participative governance, pagtangkilik sa lokal na produkto</li> </ul>
+        <img src="L1.png" alt="Lesson 1 Image">
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Lesson 2: Agrikultura</div>
+      <div class="accordion-content">
+        <h2>Agrikultura</h2> <ul> <li><strong>Kahulugan:</strong> Agham at sining ng pagpaparami ng hayop at halaman.</li> </ul> <h3>Gawain</h3> <ul> <li>Pagsasaka</li> <li>Pangingisda</li> <li>Paghahayupan</li> <li>Paggugubat</li> </ul> <h3>Kahalagahan</h3> <ul> <li>Pagkain</li> <li>Hilaw na materyales</li> <li>Trabaho</li> <li>Dolyar</li> <li>Sobrang manggagawa</li> </ul> <h3>Suliranin</h3> <ul> <li>Climate change</li> <li>Polusyon</li> <li>Peste</li> <li>Pagkaubos ng yaman</li> </ul> <h3>Mga Patakaran sa Agrikultura</h3> <ul> <li><strong>Encomienda System</strong> – pamamahagi ng lupa sa mga Espanyol; nagdulot ng pang-aabuso sa mga katutubo.</li> <li><strong>Land Registration Act (1902)</strong> – nag-aatas ng pagpaparehistro ng lupa; maraming Pilipino ang nawalan ng lupa dahil sa kakulangan sa kaalaman.</li> <li><strong>CARP (Comprehensive Agrarian Reform Program, 1988)</strong> – layunin ang pamamahagi ng lupa sa mga magsasaka upang mapabuti ang kanilang kabuhayan.</li> </ul>
+        <img src="L2.jpg" alt="Lesson 2 Image">
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Lesson 3: Industriya</div>
+      <div class="accordion-content">
+       <h2>Industriya</h2> <ul> <li><strong>Kahulugan:</strong> Pagproseso ng hilaw na materyales para sa pamilihan.</li> </ul> <h3>Sub-sektor</h3> <ul> <li>Pagmimina</li> <li>Pagmamanupaktura</li> <li>Konstruksyon</li> <li>Utilities</li> </ul> <h3>Kahalagahan</h3> <ul> <li>Trabaho</li> <li>Dolyar</li> <li>Teknolohiya</li> <li>Intermediate products</li> </ul> <h3>Suliranin</h3> <ul> <li>Kakulangan sa pondo</li> <li>Kompetisyon</li> <li>Demand</li> </ul> <h3>Mga Patakaran sa Industriya</h3> <ul> <li><strong>Filipino First Policy (1958)</strong> – prayoridad ang mga negosyanteng Pilipino kaysa dayuhan.</li> <li><strong>Oil Deregulation Law (1998)</strong> – malayang pagtatakda ng presyo ng langis ng mga kompanya.</li> <li><strong>Retail Trade Liberalization Act (2000)</strong> – pagbubukas ng retail trade sa dayuhan.</li> <li><strong>BOT Law (Build-Operate-Transfer, 1990)</strong> – pribadong sektor ang magtatayo ng proyekto, lilipat sa pamahalaan pagkatapos.</li> <li><strong>Asset Privatization Trust (1986)</strong> – pagbebenta ng ari-arian ng pamahalaan upang mabawasan ang utang.</li> </ul>
+        <img src="L3.png" alt="Lesson 3 Image">
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Lesson 4: Sektor ng Paglilingkod</div>
+      <div class="accordion-content">
+        <h2>Sektor ng Paglilingkod</h2> <ul> <li><strong>Kahulugan:</strong> Umaalalay sa produksyon, distribusyon, kalakalan, at pagkonsumo.</li> </ul> <h3>Pormal na Sektor</h3> <ul> <li>Transportasyon</li> <li>Kalakalan</li> <li>Pananalapi</li> <li>Real estate</li> <li>Pribado at pampublikong serbisyo</li> </ul> <h3>Mga Ahensya</h3> <ul> <li><strong>DOLE</strong> – Department of Labor and Employment; nagtataguyod ng karapatan ng manggagawa.</li> <li><strong>OWWA</strong> – Overseas Workers Welfare Administration; tumutulong sa OFWs.</li> <li><strong>POEA</strong> – Philippine Overseas Employment Administration; nangangasiwa sa pag-aabroad ng manggagawa.</li> <li><strong>TESDA</strong> – Technical Education and Skills Development Authority; nagbibigay ng kasanayan.</li> <li><strong>PRC</strong> – Professional Regulation Commission; naglilisensya sa mga propesyonal.</li> <li><strong>CHED</strong> – Commission on Higher Education; nangangasiwa sa kolehiyo at unibersidad.</li> </ul> <h3>Mga Batas</h3> <ul> <li><strong>Holiday Pay Law</strong> – karapatan ng manggagawa na bayaran kahit hindi pumasok sa holiday.</li> <li><strong>Wage Rationalization Act (RA 6727, 1989)</strong> – pagtatakda ng minimum wage.</li> <li><strong>Overtime Pay Law</strong> – dagdag na bayad sa oras na lampas sa regular.</li> <li><strong>Maternity Leave Law (RA 11210, 2019)</strong> – 105 araw na leave para sa ina.</li> <li><strong>Paternity Leave Law (RA 8187, 1996)</strong> – 7 araw na leave para sa ama.</li> <li><strong>Thirteenth Month Pay Law (PD 851, 1975)</strong> – karapatan ng manggagawa sa dagdag na sahod tuwing Disyembre.</li> </ul>
+        <img src="L4.jpg" alt="Lesson 4 Image">
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Lesson 5: Impormal na Sektor</div>
+      <div class="accordion-content">
+        <h2>Mpormal na Sektor</h2> <ul> <li><strong>Kahulugan:</strong> Ekonomiyang walang pormal na dokumento; hindi kasama sa GDP.</li> </ul> <h3>Halimbawa</h3> <ul> <li>Tindera sa kalsada</li> <li>Pedicab driver</li> <li>Karpintero</li> </ul> <h3>Katangian</h3> <ul> <li>Walang rehistro</li> <li>Hindi nagbabayad ng buwis</li> </ul> <h3>Kahalagahan</h3> <ul> <li>Nagbibigay ng trabaho</li> <li>Murang produkto</li> <li>Tagasalo ng mahihirap</li> </ul> <h3>Mga Programa</h3> <ul> <li><strong>DILP (DOLE Integrated Livelihood Program)</strong> – tulong sa maliliit na negosyo.</li> <li><strong>SEA-K (Self-Employment Assistance-Kaunlaran)</strong> – pautang para sa kabuhayan.</li> <li><strong>ISLA (Integrated Services for Livelihood Advancement)</strong> – livelihood projects.</li> <li><strong>Cash-for-Work Program</strong> – pansamantalang trabaho kapalit ng sahod.</li> <li><strong>4Ps (Pantawid Pamilyang Pilipino Program)</strong> – conditional cash transfer para sa mahihirap.</li> </ul>
+        <img src="L5.jpg" alt="Lesson 5 Image">
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Lesson 6: Kalakalang Panlabas</div>
+      <div class="accordion-content">
+        <h2>Kalakalang Panlabas</h2> <ul> <li><strong>Kahulugan:</strong> Palitan ng produkto/serbisyo sa pagitan ng bansa.</li> </ul> <h3>Uri</h3> <ul> <li>Bilateral – dalawang bansa</li> <li>Bloc – grupo ng bansa</li> </ul> <h3>Batayan</h3> <ul> <li><strong>Absolute Advantage</strong> – mas mahusay ang isang bansa sa paggawa ng produkto.</li> <li><strong>Comparative Advantage (David Ricardo)</strong> – mas mababa ang opportunity cost ng isang bansa sa paggawa ng produkto.</li> </ul> <h3>Balance of Trade</h3> <ul> <li><strong>Surplus</strong> – mas mataas ang export kaysa import.</li> <li><strong>Deficit</strong> – mas mataas ang import kaysa export.</li> </ul> <h3>Samahang Pandaigdigan</h3> <ul> <li><strong>WTO (World Trade Organization)</strong> – nagtatakda ng patakaran sa kalakalan.</li> <li><strong>APEC (Asia-Pacific Economic Cooperation)</strong> – kooperasyon ng bansa sa Asya-Pasipiko.</li> <li><strong>ASEAN (Association of Southeast Asian Nations)</strong> – samahan ng mga bansa sa Timog-Silangang Asya.</li> </ul> <h3>Mga Patakaran</h3> <ul> <li><strong>Taripa</strong> – buwis sa inaangkat na produkto.</li> <li><strong>Kota</strong> – limitasyon sa dami ng inaangkat.</li> <li><strong>Subsidy</strong> – tulong pinansyal ng pamahalaan sa lokal na produkto.</li> </ul>
+        <img src="L6.png" alt="Lesson 6 Image">
+      </div>
+    </div>
+  </div>
+
+  <!-- Home button -->
+  <a href="4qtr.html" class="home-btn">Go back to Home Page</a>
+
+  <script>
+    const headers = document.querySelectorAll(".accordion-header");
+
+    headers.forEach(header => {
+      header.addEventListener("click", () => {
+        const item = header.parentElement;
+        item.classList.toggle("active");
+      });
+    });
+  </script>
+
+</body>
+</html>

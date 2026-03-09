@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TLE Lessons</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('orange.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #e67e22;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      min-height: 100vh;
+    }
+
+    .title-box {
+      background-color: rgba(50,20,0,0.9); /* dark orange-brown */
+      border: 2px solid #e67e22;
+      border-radius: 12px;
+      box-shadow: 0 0 25px #e67e22;
+      padding: 30px 60px;
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .title-box h1 {
+      font-size: 3em;
+      color: #e67e22;
+      margin: 0;
+      text-shadow: 0 0 15px #e67e22;
+    }
+
+    .accordion {
+      width: 85%;
+    }
+
+    .accordion-item {
+      background-color: rgba(50,20,0,0.9);
+      border: 2px solid #e67e22;
+      border-radius: 10px;
+      margin: 15px 0;
+      box-shadow: 0 0 20px #e67e22;
+      overflow: hidden;
+      font-size: 1.2em;
+    }
+
+    .accordion-header {
+      padding: 20px;
+      cursor: pointer;
+      font-size: 1.4em;
+      color: #e67e22;
+      transition: background-color 0.3s ease;
+    }
+
+    .accordion-header:hover {
+      background-color: rgba(80,40,0,0.9);
+    }
+
+    .accordion-content {
+      display: none; /* hidden by default */
+      padding: 0 20px;
+      color: #e67e22;
+      font-size: 1.1em;
+    }
+
+    .accordion-content p {
+      margin: 20px 0;
+    }
+
+    .accordion-item.active .accordion-content {
+      display: block; /* show full content when active */
+      padding-bottom: 20px;
+    }
+
+    /* Home button */
+    .home-btn {
+      margin: 40px 0;
+      padding: 15px 30px;
+      font-size: 1.4em;
+      color: #e67e22;
+      background-color: rgba(50,20,0,0.9);
+      border: 2px solid #e67e22;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #e67e22;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .home-btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 30px #e67e22;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="title-box">
+    <h1>TLE Lessons</h1>
+  </div>
+
+  <div class="accordion">
+    <div class="accordion-item">
+      <div class="accordion-header">Lesson 1: Introduction to JavaScript</div>
+      <div class="accordion-content">
+        <p>JavaScript creates dynamic and interactive user experiences. It handles user interface rendering, content loading, real-time updates, personalized feeds, video controls, and tracking user activity.
+
+Static websites display content exactly as stored, while dynamic websites display different content and interact with users based on actions, preferences, or variables.
+
+JavaScript is the most popular scripting language on the internet. It works in all major browsers. It was developed by Brendan Eich, originally called Mocha, later renamed LiveScript, and adopted by Internet Explorer in 1996. It enhances webpages and builds video games. It is a trademark of Oracle Corporation and licensed to entities like Mozilla Foundation. It is client-side, high-level, interpreted, and object-oriented.
+
+Key concepts include client-side execution on the user’s computer, high-level human-readable syntax, interpreted code converted at runtime, case-sensitive syntax, and optional semicolons.
+
+JavaScript can react to events, validate forms, create and manage cookies, and enhance webpages with interactivity.
+
+Applications include Google Search for real-time updates, YouTube for dynamic content and streaming, and social media platforms for infinite scrolling and interactive menus. Facebook developed the React framework.
+
+Features include structured programming syntax, dynamic typing, local execution for faster interaction, detection of user actions, and combination with CSS for DHTML effects.
+
+Characteristics include being lightweight, inserted into HTML pages, supported by modern browsers, easy to learn, quick to download effects, requiring no extra tools, license-free, and supported by a strong developer community.
+
+Disadvantages include lack of support on some devices and browsers, security risks from malicious scripts, exposed source code, and obfuscated code that can be reverse engineered.
+
+A script is a set of instructions connecting components to perform tasks. JavaScript is a powerful scripting language for web functionalities. Tools needed are a text editor and a web browser. Basic components include objects, methods, and properties.
+
+To start using JavaScript, script tags are placed in HTML. The type attribute defines the language and version. Document.write outputs text to a webpage.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Lesson 2: Scripts</div>
+      <div class="accordion-content">
+        <p>Scripts can be placed in different sections of an HTML file depending on desired behavior.
+
+In the head section, scripts are pre-loaded and execute before user interaction. They are ideal for function calls and code that must be ready before the page loads.
+
+In the body section, scripts execute when the page loads and are useful for code that should run after content is available.
+
+Script tags can be placed in either section, and multiple script tags can be included throughout the file.
+
+External JavaScript files are saved with a .js extension and linked using the src attribute. They do not include script tags inside them. Comments can be single-line or multi-line.
+
+Guidelines include case sensitivity, careful tracking of variable names, ignoring white space but using it for readability, and breaking code lines with a backslash without breaking commands.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Lesson 3: Characteristics of JavaScript</div>
+      <div class="accordion-content">
+        <p>JavaScript is an interpreted language requiring a browser to run. It was created to work with HTML and its source code can be viewed.
+
+It is a scripting language used for repetitive tasks, providing instructions to other programs, and changing webpage elements through the browser.
+
+Client-side scripting executes on the user’s machine, while server-side scripting executes on the hosting server.
+
+JavaScript supports object-oriented programming, treating elements as objects with methods and properties.
+
+Key understanding requires learning gradually, practicing, and understanding objects such as browser window, page, status bar, date, and time. Methods are actions performed by objects, properties are subsections of objects, events are actions like load or click, parameters describe object characteristics, types include integer, string, float, and Boolean, and type conversion changes variable types.
+
+Commonly used properties and methods include window object with location, open, and setTimeout; document object with fgColor, cookie, write, and lastModified; math object with PI, pow, max, and min; navigator object with appName, appVersion, cookieEnabled, and platform.
+
+JavaScript code placed in head executes before body. Script tags tell the browser to interpret code. Parsing converts text into structured format.
+
+Syntax requires language attribute in script tag, uses object.method or object.property, is case-sensitive, processed top to bottom, displays text with quotes, uses consistent single or double quotes, allows comments, concatenates strings with plus, and recommends semicolons.
+
+Variables are symbolic representations of values and act as containers for values that can change.
+
+Data types include character, string, integer, float, Boolean, function, object, array, undefined, and null.
+
+Variables are declared using var. Variables inside functions are local.
+
+Rules for naming variables allow letters, digits, and underscores, disallow spaces and punctuation, forbid digits as the first character, and enforce case sensitivity.</p>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-header">Lesson 4: Events</div>
+      <div class="accordion-content">
+        <p>Events in JavaScript are actions triggered by user interaction or system activity. Functions depend on events to execute. Common event attributes include onabort when image loading is interrupted, onblur when an element loses focus, onchange when field content is changed, onclick for mouse clicks, ondblclick for double clicks, onerror when a document or image fails to load, onfocus when an element gains focus, onkeydown when a key is pressed, onkeypress when a key is held down, onkeyup when a key is released, onload when a page or image finishes loading, onunload when a user exits a page, onmousedown when a mouse button is pressed, onmouseup when a mouse button is released, onmousemove when the mouse is moved, onmouseover when the mouse moves over an element, onmouseout when the mouse moves off an element, onreset when the reset button is clicked, onresize when a window or frame is resized, onselect when text is selected, and onsubmit when the submit button is clicked. Onload and onunload are triggered when entering or exiting a page and can be used to check browser version or manage cookies. Onfocus, onblur, and onchange are often used for form validation. Onsubmit validates fields before submission. Onmouseover and onmouseout are used for animation effects. Onclick connects to another page or triggers a function.
+
+Popup boxes are windows that appear due to events or page actions. They include alert boxes, prompt boxes, and confirm boxes. Alert boxes ensure the user reads a message. Prompt boxes request user input before proceeding and return a value if confirmed or null if cancelled. Confirm boxes request user verification or acceptance and return true if confirmed or false if cancelled.
+
+Variables are temporary storage for values and expressions. They are case-sensitive, must begin with a letter or underscore, cannot use reserved words, can hold numbers, strings, or booleans, and are loosely typed so their type adapts to the value assigned. Operators include addition, subtraction, multiplication, division, modulus, increment, and decrement. Addition can also concatenate strings. The order of precedence follows parentheses first, then multiplication, division, or modulus, and finally addition or subtraction. Increment and decrement operators affect results depending on usage.
+
+Comparison statements evaluate equality or difference between values. Operators include equal, equal and same type, not equal, not equal or different type, greater than, less than, greater or equal, and less or equal. Logical operators determine logic between expressions. They include AND which requires both conditions true, OR which requires at least one condition true, and NOT which negates a condition.
+
+Conditional statements perform different operations based on conditions. The if statement executes if the condition is true. The if-else statement executes one block if true and another if false. The if-else if-else statement handles multiple conditions. The switch statement selects one block among many and uses break to stop execution after the chosen block.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Home button -->
+  <a href="4qtr.html" class="home-btn">Go back to Home Page</a>
+
+  <script>
+    const headers = document.querySelectorAll(".accordion-header");
+
+    headers.forEach(header => {
+      header.addEventListener("click", () => {
+        const item = header.parentElement;
+        item.classList.toggle("active");
+      });
+    });
+  </script>
+
+</body>
+</html>
+
